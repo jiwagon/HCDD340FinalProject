@@ -1,4 +1,4 @@
-package com.example.hcdd340_finalproject;
+package com.example.Tripper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
