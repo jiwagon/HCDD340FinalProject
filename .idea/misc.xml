@@ -5,9 +5,9 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.222" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.2555442527488427" />
-        <entry key="..\:/HCDD340/final project/HCDD340FinalProject/app/src/main/res/layout/activity_map.xml" value="0.6" />
-        <entry key="..\:/HCDD340/final project/HCDD340FinalProject/app/src/main/res/layout/activity_signup.xml" value="0.25364583333333335" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2539657592773437" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.6035232543945312" />
+        <entry key="app/src/main/res/layout/activity_map.xml" value="0.1675925925925926" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.1675925925925926" />
       </map>
     </option>
   </component>
