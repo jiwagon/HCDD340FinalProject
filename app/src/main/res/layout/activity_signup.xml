@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="130dp"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="175dp"
         android:ems="10"
         android:hint="abc123@psu.edu"
         android:inputType="textEmailAddress"
@@ -19,33 +19,44 @@
         app:layout_constraintTop_toTopOf="@+id/signup_title" />
 
     <TextView
-        android:id="@+id/username_label"
+        android:id="@+id/firstname_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
-        android:text="Username:  "
+        android:text="First Name:  "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/email_label_signup" />
 
     <TextView
+        android:id="@+id/lastName_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:text="Last Name:  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstname_label" />
+
+    <TextView
         android:id="@+id/password_label2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="50dp"
         android:text="Password: "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/username_label" />
+        app:layout_constraintTop_toTopOf="@+id/lastName_label" />
 
     <TextView
         android:id="@+id/email_label_signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         android:text="Email: "
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,14 +84,24 @@
         app:layout_constraintTop_toTopOf="@+id/email_editText_signup" />
 
     <EditText
+        android:id="@+id/editTextTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/email_editText_signup"
+        app:layout_constraintTop_toTopOf="@+id/email_editText_signup" />
+
+    <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="50dp"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/email_editText_signup" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTextLastName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
         android:id="@+id/createAccount_button"
@@ -98,7 +119,7 @@
         android:layout_width="552dp"
         android:layout_height="718dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/signup_title"
