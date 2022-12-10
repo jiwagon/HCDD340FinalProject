@@ -4,4 +4,7 @@
     <!--Bottom Navigation Bar-->
     <string name = "home_label">Home</string>
     <string name = "bucket_list_label">Bucket List</string>
+    <string name = "trip_label">Flights</string>
+    <string name = "docs_label">Documents</string>
+    <string name = "account_label">Account</string>
 </resources>
