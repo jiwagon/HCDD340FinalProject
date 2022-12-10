@@ -83,4 +83,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/login_button" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="552dp"
+        android:layout_height="718dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appName_text"
+        app:srcCompat="@drawable/earth_travel_world_png_transparent_image__1_" />
 </androidx.constraintlayout.widget.ConstraintLayout>

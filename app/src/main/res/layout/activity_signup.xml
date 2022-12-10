@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <EditText
         android:id="@+id/email_editText_signup"
         android:layout_width="wrap_content"
@@ -88,7 +89,20 @@
         android:layout_marginTop="450dp"
         android:backgroundTint="#86C5FF"
         android:text="Create"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/signup_title" />
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="552dp"
+        android:layout_height="718dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/signup_title"
-        tools:layout_editor_absoluteX="140dp" />
+        app:srcCompat="@drawable/earth_travel_world_png_transparent_image__1_" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
