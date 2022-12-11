@@ -10,4 +10,6 @@
     <string name = "trip_label">Flights</string>
     <string name = "docs_label">Documents</string>
     <string name = "account_label">Account</string>
+    <string name="past_city_1">State College</string>
+    <string name="cityDetail1">You have been to State College in December  1st, 2021</string>
 </resources>
