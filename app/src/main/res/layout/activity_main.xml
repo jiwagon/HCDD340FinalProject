@@ -34,13 +34,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="300dp"
         android:background="@drawable/home_dashboard_back"
         app:layout_constraintBottom_toBottomOf="@id/bottom_navigation"
         app:layout_constraintTop_toBottomOf="@id/home_widget_title">
+
+
+
+        <RelativeLayout
+            android:id="@+id/widget_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp" />
+
+        </RelativeLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            />
     </RelativeLayout>
 
 
