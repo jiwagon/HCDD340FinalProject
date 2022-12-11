@@ -57,14 +57,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.bucket_list_label) {
             Intent bucketListIntent = new Intent(this, BucketListActivity.class);
             startActivity(bucketListIntent);
             return true;
-        } else {
+        }
+        if (item.getItemId() == R.id.home_label) {
+            Intent homeIntent = new Intent(this, MainActivity.class);
+            startActivity(homeIntent);
+            return true;
+        }
+        else {
             Log.d(TAG, "Unknown item id in bottom nav!");
             return true;
         }

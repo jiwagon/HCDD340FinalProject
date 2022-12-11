@@ -2,6 +2,7 @@ package com.example.Tripper;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -28,8 +29,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         sharedPreferences = getSharedPreferences(SignUpActivity.EMAIL_KEY, MODE_PRIVATE);
     }
-
-
 
     @Override
     public void onClick(View view) {
