@@ -1,5 +1,6 @@
 package com.example.Tripper;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -39,9 +40,11 @@ public class BucketListActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View view) {
         int id = view.getId();
         if (id == R.id.pin1){
-            Snackbar snackbar = Snackbar
-                    .make(findViewById(android.R.id.content), R.string.past_city_1, Snackbar.LENGTH_LONG);
-            snackbar.show();
+            AlertDialog.Builder d = new AlertDialog.Builder(this);
+            d.setTitle(R.string.past_city_1);
+            d.setMessage(R.string.cityDetail1);
+            d.setPositiveButton(android.R.string.ok, null);
+            d.show();
         }
         else
             Log.d(TAG, "Unknown ID: " + id);
