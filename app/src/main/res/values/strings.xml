@@ -12,4 +12,6 @@
     <string name = "account_label">Account</string>
     <string name="past_city_1">State College</string>
     <string name="cityDetail1">You have been to State College in December  1st, 2021</string>
+    <string name="login_error_title">Unable to login</string>
+    <string name="login_error_message">Please try again using the correct email or password</string>
 </resources>
