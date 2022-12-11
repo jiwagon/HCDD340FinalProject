@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Tripper</string>
 
+    <!--Homepage-->
+    <string name = "home_widget_title">Current</string>
+
     <!--Bottom Navigation Bar-->
     <string name = "home_label">Home</string>
     <string name = "bucket_list_label">Bucket List</string>
