@@ -7,9 +7,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class DocumentActivity extends AppCompatActivity implements View.OnClickListener{
@@ -82,4 +84,6 @@ public class DocumentActivity extends AppCompatActivity implements View.OnClickL
         else
             Log.d(TAG, "Unknown ID: " + id);
     }
+
+
 }

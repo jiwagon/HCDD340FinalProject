@@ -13,12 +13,14 @@ import android.view.View;
 import com.google.android.material.snackbar.Snackbar;
 
 
-public class BucketListActivity extends AppCompatActivity implements View.OnClickListener{
+public class BucketListActivity extends AppCompatActivity implements View.OnClickListener {
 
 
     private static final String TAG = "Activity 2";
     private static final int[] ACTION_ICON_IDS = {
-            R.id.pin1
+            R.id.pin1,
+            R.id.pin2,
+            R.id.pin3
     };
 
     @Override
@@ -51,7 +53,7 @@ public class BucketListActivity extends AppCompatActivity implements View.OnClic
             Intent bucketListIntent = new Intent(this, BucketListActivity.class);
             startActivity(bucketListIntent);
             return true;
-        }else if (menuId == R.id.docs_label) {
+        } else if (menuId == R.id.docs_label) {
             Log.d(TAG, "Document page clicked");
             Intent DocumentListIntent = new Intent(this, DocumentActivity.class);
             startActivity(DocumentListIntent);
@@ -64,29 +66,30 @@ public class BucketListActivity extends AppCompatActivity implements View.OnClic
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == R.id.pin1){
-            AlertDialog.Builder d = new AlertDialog.Builder(this);
-            d.setTitle(R.string.past_city_1);
-            d.setMessage(R.string.cityDetail1);
-            d.setPositiveButton(android.R.string.ok, null);
-            d.show();
-        }
-        else if (id == R.id.pin2){
-            AlertDialog.Builder d = new AlertDialog.Builder(this);
-            d.setTitle(R.string.past_city_2);
-            d.setMessage(R.string.cityDetail2);
-            d.setPositiveButton(android.R.string.ok, null);
-            d.show();
-        }
-        else if (id == R.id.pin3){
-            AlertDialog.Builder d = new AlertDialog.Builder(this);
-            d.setTitle(R.string.past_city_3);
-            d.setMessage(R.string.cityDetail3);
-            d.setPositiveButton(android.R.string.ok, null);
-            d.show();
-        }
-        else
-            Log.d(TAG, "Unknown ID: " + id);
 
+        switch (id) {
+            case R.id.pin1:
+                AlertDialog.Builder d = new AlertDialog.Builder(this);
+                d.setTitle(R.string.past_city_1);
+                d.setMessage(R.string.cityDetail1);
+                d.setPositiveButton(android.R.string.ok, null);
+                d.show();
+                break;
+            case R.id.pin2:
+                AlertDialog.Builder d2 = new AlertDialog.Builder(this);
+                d2.setTitle(R.string.past_city_2);
+                d2.setMessage(R.string.cityDetail2);
+                d2.setPositiveButton(android.R.string.ok, null);
+                d2.show();
+                break;
+            case R.id.pin3:
+                AlertDialog.Builder d3 = new AlertDialog.Builder(this);
+                d3.setTitle(R.string.past_city_3);
+                d3.setMessage(R.string.cityDetail3);
+                d3.setPositiveButton(android.R.string.ok, null);
+                d3.show();
+                break;
+        }
     }
 }
+
