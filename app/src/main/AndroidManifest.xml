@@ -25,6 +25,9 @@
         <activity android:name=".BucketListActivity"
             android:exported="true">
         </activity>
+        <activity android:name=".DocumentActivity"
+            android:exported="true">
+        </activity>
         <activity android:name=".LoginActivity" />
     </application>
 

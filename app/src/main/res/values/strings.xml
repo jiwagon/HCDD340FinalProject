@@ -14,4 +14,8 @@
     <string name="cityDetail1">You have been to State College in December  1st, 2021</string>
     <string name="login_error_title">Unable to login</string>
     <string name="login_error_message">Please try again using the correct email or password</string>
+
+    <string name="i20_detail">I-20. Last Update: 09/24/2021</string>
+    <string name="visa_detail">VISA. Last Update: 11/19/2021</string>
+    <string name="i94_detail">I-94. Last Update: 04/27/2022</string>
 </resources>
