@@ -1,8 +1,10 @@
 package com.example.Tripper;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AlertDialog;
@@ -34,6 +36,29 @@ public class DocumentActivity extends AppCompatActivity implements View.OnClickL
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.bottom_navigation_menu, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int menuId = item.getItemId();
+
+        if (menuId == R.id.home_label) {
+            Log.d(TAG, "Home page clicked");
+            Intent MainIntent = new Intent(this, MainActivity.class);
+            startActivity(MainIntent);
+            return true;
+        } else if (menuId == R.id.bucket_list_label) {
+            Log.d(TAG, "Bucket list page clicked");
+            Intent bucketListIntent = new Intent(this, BucketListActivity.class);
+            startActivity(bucketListIntent);
+            return true;
+        }else if (menuId == R.id.docs_label) {
+            Log.d(TAG, "Document page clicked");
+            Intent DocumentListIntent = new Intent(this, DocumentActivity.class);
+            startActivity(DocumentListIntent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
