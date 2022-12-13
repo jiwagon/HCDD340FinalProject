@@ -70,6 +70,7 @@
         app:layout_constraintTop_toBottomOf="@+id/visa_image"
         tools:ignore="MissingConstraints" />
 
+
     <TextView
         android:id="@+id/untitled_text"
         android:layout_width="wrap_content"
