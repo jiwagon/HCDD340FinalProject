@@ -81,5 +81,15 @@
         app:layout_constraintStart_toEndOf="@+id/visa_view"
         app:layout_constraintTop_toBottomOf="@+id/i94_image" />
 
+    <Button
+        android:id="@+id/addNew_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Add Document"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
